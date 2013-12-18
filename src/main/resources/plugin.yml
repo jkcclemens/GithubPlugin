@@ -1,0 +1,3 @@
+name: Github
+version: ${version}
+main: me.jkcclemens.royalbot.plugins.github.GithubPlugin
