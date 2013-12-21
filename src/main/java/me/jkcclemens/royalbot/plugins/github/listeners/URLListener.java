@@ -19,7 +19,7 @@ public class URLListener implements IRCListener {
     private final ObjectMapper om = new ObjectMapper();
     private final Pattern pullRequest = Pattern.compile("https?://github\\.com/(\\w+)/(\\w+)/pull/(\\d+)/?");
     private final Pattern repository = Pattern.compile("https?://github\\.com/(\\w+)/(\\w+)/?");
-    private final Pattern commit = Pattern.compile("https?://github\\.com/(\\w+)/(\\w+)/commit/([\\w]{40})/?");
+    private final Pattern commit = Pattern.compile("https?://github\\.com/(\\w+)/(\\w+)/commit/(\\w{40})/?");
     private final Pattern user = Pattern.compile("https?://github\\.com/(\\w+)/?");
 
     @Override
