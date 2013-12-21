@@ -14,7 +14,7 @@ public class GithubPlugin extends IRCPlugin {
         ch.register(new GithubCommand(this));
 
         ListenerHandler lh = getBot().getListenerHandler();
-        lh.register(new URLListener());
+        lh.register(new URLListener(this));
 
         getLogger().info("Enabled!");
     }
