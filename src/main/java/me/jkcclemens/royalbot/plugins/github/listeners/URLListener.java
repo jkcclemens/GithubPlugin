@@ -78,7 +78,7 @@ public class URLListener implements IRCListener {
             if (jn == null) continue;
             e.respond(String.format("Commit on %s: \"%s\" by %s (%s) - %s file actions: %s additions, %s deletions.",
                     matches[0] + "/" + matches[1],
-                    jn.path("commit").path("message").asText(),
+                    jn.path("commit").path("message").asText().split("\r?\n")[0],
                     jn.path("commit").path("committer").path("name").asText(),
                     jn.path("committer").path("login").asText(),
                     jn.path("stats").path("total").asInt(),
