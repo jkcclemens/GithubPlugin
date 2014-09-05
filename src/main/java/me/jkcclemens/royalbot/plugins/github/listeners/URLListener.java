@@ -63,7 +63,7 @@ public class URLListener implements IRCListener {
                     jn.path("language").asText(),
                     jn.path("description").asText(),
                     jn.path("stargazers_count").asInt(),
-                    jn.path("watchers_count").asInt(),
+                    jn.path("subscribers_count").asInt(),
                     jn.path("forks_count").asInt()
             ));
         }
